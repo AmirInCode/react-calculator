@@ -1,0 +1,14 @@
+.keypad {
+    /* max-width: 320px; */
+    /* margin: 40px auto; */
+    padding: 15px;
+    background: #B8F3D7;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
