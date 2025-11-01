@@ -12,7 +12,7 @@ function Keypad(){
         "7", "8", "9", "*",
         "4", "5", "6", "-",
         "1", "2", "3", "+",
-        ".", "0", "<=", "=",
+        ".", "0", "\u232B", "=",
       ];
 
    
@@ -23,6 +23,11 @@ function Keypad(){
     if (value === "C") {
         setExpression("");
         setResult("");
+        return;
+      }
+    if (value === "\u232B") {
+        setExpression((prev) => prev.slice(0, -1));
+        setResult((prev) => prev.slice(0, -1));
         return;
       }
   
